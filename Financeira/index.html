@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <h1>FINANCEIRA DINHEIRO NA MÃO</h1> 
+
+ <div class="main">  
+<table>
+    <tr><th>Inserindo Dados do Empréstimo</th>
+    <td></td>
+    <th>Saldo do Empréstimo, Valor Liquido Acumulado e Juros</th></tr>
+    <tr><td>Valor do Empréstimo (R$)</td>
+    <td><input type="text" id="amount" onchange="calculate();"></td>
+    <td rowspan="8">
+        <canvas id="graph" width="500px" height="350px"></canvas></td></tr>
+        <tr><td>Juros Anuais (%)</td>
+        <td><input type="text" id="apr" onchange="calculate();"></td></tr>
+        <tr><td>Período (anos)</td>
+        <td><input type="text" id="years" onchange="calculate();"></td></tr>
+        <tr><td>ZipCode </td>
+        <td><input type="text" id="zipcode" onchange="calculate();"></td></tr>
+        <tr><th>Pagamentos</th>
+        <td><button onclick="calculate();">Calcular</button></td></tr>
+        <tr><td>Pagamento Mensal: </td>
+        <td>R$ <span class="output" id="payment"></span></td></tr>
+        <tr><td>Pagamento Total</td>
+        <td>R$ <span class="output" id="total"></span></td></tr>
+        <tr><td>Juros Total</td>
+        <td>R$ <span class="output" id="totalinterest"></span></td></tr>
+        <tr><th>cristiancpaz</th><td colspan="2">Solicite seu empréstimo</td></tr>
+
+
+</table>
+</div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
